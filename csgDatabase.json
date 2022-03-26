@@ -37,7 +37,7 @@
       "8.0",
       "0.1"
     ],
-    "value": 2000
+    "value": 3500
   },
   "Size(cm)": {
     "name": "Size(cm)",
@@ -61,7 +61,7 @@
       "240.0",
       "10.0"
     ],
-    "value": 80000
+    "value": 60000
   },
   "Height(cm)": {
     "name": "Height(cm)",

@@ -44,9 +44,9 @@ CSG Make_Peg(){
 	w = Base_Size.getMM()
 	r = Peg_Radius.getMM()
 	//make a rounded cube
-	Maze_Wall_Peg = new RoundedCube(w,w,h).cornerRadius(2).toCSG()
+	Maze_Wall_Peg = new Cylinder(w,w,h).toCSG()
 	//make a cylinder
-	Peg = new Cylinder(r,r,r*10,(int)30).toCSG()
+	Peg = new Cylinder(r,r,Post_Height.getMM() *25.4-h,(int)30).toCSG()
 	//combine them, and translase below xy plane
 	Maze_Wall_Peg  = Maze_Wall_Peg.movez(-Maze_Wall_Peg.getMaxZ())
 	Peg = Peg.movez(-Maze_Wall_Peg.getMaxZ())
@@ -67,8 +67,9 @@ Maze_Wall_Peg = Make_Peg()
 
 //Object Placement
 //BowlerStudioController.addCsg(Maze_Wall_Post.intersect(Maze_Wall_Peg)) //sanity check for peg size
-BowlerStudioController.addCsg(Maze_Wall_Post)
-BowlerStudioController.addCsg(Maze_Wall_Peg)
+//BowlerStudioController.addCsg(Maze_Wall_Post)
+//BowlerStudioController.addCsg(Maze_Wall_Peg)
+BowlerStudioController.addCsg(Maze_Wall_Post.union(Maze_Wall_Peg)) 
 
 /* 
 String filename =ScriptingEngine.getWorkspace().getAbsolutePath()+"/CopiedStl.stl";
