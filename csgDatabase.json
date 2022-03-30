@@ -1,12 +1,4 @@
 {
-  "Height(in)": {
-    "name": "Height(in)",
-    "options": [
-      "24.0",
-      "1.0"
-    ],
-    "value": 11642
-  },
   "Size(mm)": {
     "name": "Size(mm)",
     "options": [
@@ -23,6 +15,78 @@
     ],
     "value": 2000
   },
+  "Busk Center To Center": {
+    "name": "Busk Center To Center",
+    "options": [
+      "10",
+      "60"
+    ],
+    "value": 52000
+  },
+  "Busk Latch From Edge": {
+    "name": "Busk Latch From Edge",
+    "options": [
+      "10",
+      "20"
+    ],
+    "value": 15500
+  },
+  "underbust": {
+    "name": "underbust",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 863599
+  },
+  "Base Size(mm)": {
+    "name": "Base Size(mm)",
+    "options": [
+      "240.0",
+      "10.0"
+    ],
+    "value": 59000
+  },
+  "Height(cm)": {
+    "name": "Height(cm)",
+    "options": [
+      "8.0",
+      "0.1"
+    ],
+    "value": 100
+  },
+  "waist high hip": {
+    "name": "waist high hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 101600
+  },
+  "Height(in)": {
+    "name": "Height(in)",
+    "options": [
+      "24.0",
+      "1.0"
+    ],
+    "value": 11642
+  },
+  "waist to top back": {
+    "name": "waist to top back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 177799
+  },
+  "waist to bottom back": {
+    "name": "waist to bottom back",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 171450
+  },
   "Post Height(in)": {
     "name": "Post Height(in)",
     "options": [
@@ -31,6 +95,80 @@
     ],
     "value": 8000
   },
+  "high hip": {
+    "name": "high hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 990599
+  },
+  "low hip": {
+    "name": "low hip",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 1041399
+  },
+  "vexSpacer Default": {
+    "options2": [
+      "oneEighth",
+      "oneHalf",
+      "oneQuater",
+      "threeEighth",
+      "washer"
+    ],
+    "name": "vexSpacer Default",
+    "options": [
+      "oneEighth",
+      "oneHalf",
+      "oneQuater",
+      "threeEighth",
+      "washer"
+    ],
+    "strValue": "threeEighth"
+  },
+  "Busk Length": {
+    "name": "Busk Length",
+    "options": [
+      "100",
+      "600"
+    ],
+    "value": 300000
+  },
+  "Base Radius(mm)": {
+    "name": "Base Radius(mm)",
+    "options": [
+      "240.0",
+      "10.0"
+    ],
+    "value": 49880
+  },
+  "waist to pubic bone": {
+    "name": "waist to pubic bone",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 210000
+  },
+  "Busk Nubon from Edge": {
+    "name": "Busk Nubon from Edge",
+    "options": [
+      "1",
+      "8"
+    ],
+    "value": 4500
+  },
+  "under breast to waist": {
+    "name": "under breast to waist",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 110000
+  },
   "Peg Radius(mm)": {
     "name": "Peg Radius(mm)",
     "options": [
@@ -38,6 +176,14 @@
       "0.1"
     ],
     "value": 3500
+  },
+  "waist": {
+    "name": "waist",
+    "options": [
+      "120.0",
+      "1.0"
+    ],
+    "value": 762000
   },
   "Size(cm)": {
     "name": "Size(cm)",
@@ -55,20 +201,28 @@
     ],
     "value": 20000
   },
-  "Base Size(mm)": {
-    "name": "Base Size(mm)",
+  "number rows or rivets": {
+    "name": "number rows or rivets",
     "options": [
-      "240.0",
-      "10.0"
+      "1",
+      "2"
     ],
-    "value": 60000
+    "value": 1000
   },
-  "Height(cm)": {
-    "name": "Height(cm)",
+  "number of panels": {
+    "name": "number of panels",
     "options": [
-      "8.0",
-      "0.1"
+      "12",
+      "4"
     ],
-    "value": 100
+    "value": 8000
+  },
+  "Busk Latch Width": {
+    "name": "Busk Latch Width",
+    "options": [
+      "10",
+      "20"
+    ],
+    "value": 13500
   }
 }
