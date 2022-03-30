@@ -112,13 +112,6 @@
     "value": 1041399
   },
   "vexSpacer Default": {
-    "options2": [
-      "oneEighth",
-      "oneHalf",
-      "oneQuater",
-      "threeEighth",
-      "washer"
-    ],
     "name": "vexSpacer Default",
     "options": [
       "oneEighth",
