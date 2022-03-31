@@ -66,11 +66,12 @@ Maze_Wall_Post = Make_Post()
 Maze_Wall_Peg = Make_Peg()
 
 //Object Placement
-//BowlerStudioController.addCsg(Maze_Wall_Post.intersect(Maze_Wall_Peg)) //sanity check for peg size
-//BowlerStudioController.addCsg(Maze_Wall_Post)
-//BowlerStudioController.addCsg(Maze_Wall_Peg)
-BowlerStudioController.addCsg(Maze_Wall_Post.union(Maze_Wall_Peg)) 
-
+try{
+	//BowlerStudioController.addCsg(Maze_Wall_Post.intersect(Maze_Wall_Peg)) //sanity check for peg size
+	//BowlerStudioController.addCsg(Maze_Wall_Post)
+	//BowlerStudioController.addCsg(Maze_Wall_Peg)
+	BowlerStudioController.addCsg(Maze_Wall_Post.union(Maze_Wall_Peg)) 
+}catch(e){}
 /* 
 String filename =ScriptingEngine.getWorkspace().getAbsolutePath()+"/CopiedStl.stl";
 FileUtil.write(Paths.get(filename),
@@ -82,4 +83,4 @@ ScriptingEngine.pushCodeToGit("https://github.com/WPIRoboticsEngineering/Modular
 	 Maze_Wall_Post.toStlString(), 
 	 "Printable 11inch demo version")
 */
-return null
+return [Maze_Wall_Post.union(Maze_Wall_Peg)]
