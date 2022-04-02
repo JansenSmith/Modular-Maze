@@ -1,0 +1,82 @@
+{
+  "Height(in)": {
+    "name": "Height(in)",
+    "options": [
+      "24.0",
+      "1.0"
+    ],
+    "value": 11642
+  },
+  "Size(mm)": {
+    "name": "Size(mm)",
+    "options": [
+      "240.0",
+      "10.0"
+    ],
+    "value": 80000
+  },
+  "Base Height(mm)": {
+    "name": "Base Height(mm)",
+    "options": [
+      "20.0",
+      "0.1"
+    ],
+    "value": 100
+  },
+  "Post Height(in)": {
+    "name": "Post Height(in)",
+    "options": [
+      "24.0",
+      "1.0"
+    ],
+    "value": 8000
+  },
+  "Peg Radius(mm)": {
+    "name": "Peg Radius(mm)",
+    "options": [
+      "8.0",
+      "0.1"
+    ],
+    "value": 2500
+  },
+  "Base Radius(mm)": {
+    "name": "Base Radius(mm)",
+    "options": [
+      "240.0",
+      "10.0"
+    ],
+    "value": 40000
+  },
+  "Size(cm)": {
+    "name": "Size(cm)",
+    "options": [
+      "24.0",
+      "1.0"
+    ],
+    "value": 4833
+  },
+  "Height(mm)": {
+    "name": "Height(mm)",
+    "options": [
+      "20.0",
+      "0.1"
+    ],
+    "value": 20000
+  },
+  "Base Size(mm)": {
+    "name": "Base Size(mm)",
+    "options": [
+      "240.0",
+      "10.0"
+    ],
+    "value": 118333
+  },
+  "Height(cm)": {
+    "name": "Height(cm)",
+    "options": [
+      "8.0",
+      "0.1"
+    ],
+    "value": 100
+  }
+}
