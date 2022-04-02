@@ -11,7 +11,7 @@ DEFAULT_POST  = Vitamins.get(servoFile)
 						.toXMin()
 						.toYMin()
 						
-//Setup Params
+//Setup Params 
 Post_Height 	= new LengthParameter("Post Height(in)",8,[24.0,1.0])
 Base_Size		= new LengthParameter("Base Radius(mm)",40,[240.0,10.0])
 Base_Height	= new LengthParameter("Base Height(mm)",1,[20.0,0.1])
