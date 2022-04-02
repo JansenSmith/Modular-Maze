@@ -15,7 +15,7 @@ DEFAULT_POST  = Vitamins.get(servoFile)
 Post_Height 	= new LengthParameter("Post Height(in)",8,[24.0,1.0])
 Base_Size		= new LengthParameter("Base Radius(mm)",40,[240.0,10.0])
 Base_Height	= new LengthParameter("Base Height(mm)",1,[20.0,0.1])
-Peg_Radius	= new LengthParameter("Peg Radius(mm)",2,[8.0,0.1])
+Peg_Radius	= new LengthParameter("Peg Radius(mm)",3,[8.0,0.1])
 
 // Object Generation Functions
 CSG Make_Post(){
