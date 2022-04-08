@@ -15,6 +15,14 @@
     ],
     "value": 2000
   },
+  "Cable Cut Out Length": {
+    "name": "Cable Cut Out Length",
+    "options": [
+      "500",
+      "0.01"
+    ],
+    "value": 30000
+  },
   "Busk Center To Center": {
     "name": "Busk Center To Center",
     "options": [
@@ -38,6 +46,14 @@
       "1.0"
     ],
     "value": 863599
+  },
+  "printerOffset": {
+    "name": "printerOffset",
+    "options": [
+      "1.2",
+      "0"
+    ],
+    "value": 500
   },
   "Base Size(mm)": {
     "name": "Base Size(mm)",
@@ -79,6 +95,21 @@
     ],
     "value": 177799
   },
+  "LewanSoulHorn Default": {
+    "name": "LewanSoulHorn Default",
+    "options": [
+      "round",
+      "round_m3_bolts"
+    ],
+    "strValue": "round_m3_bolts"
+  },
+  "LewanSoulMotor Default": {
+    "name": "LewanSoulMotor Default",
+    "options": [
+      "lx_224"
+    ],
+    "strValue": "lx_224"
+  },
   "waist to bottom back": {
     "name": "waist to bottom back",
     "options": [
@@ -86,6 +117,35 @@
       "1.0"
     ],
     "value": 171450
+  },
+  "hobbyServo Default": {
+    "name": "hobbyServo Default",
+    "options": [
+      "DHV56mg_sub_Micro",
+      "hv5932mg",
+      "hv6214mg",
+      "mg92b",
+      "standard",
+      "standardMicro",
+      "towerProMG91",
+      "tproSG90",
+      "tproTG90"
+    ],
+    "strValue": "mg92b"
+  },
+  "hobbyServoHorn Default": {
+    "name": "hobbyServoHorn Default",
+    "options": [
+      "DHV56mg_sub_Micro_1",
+      "DHV56mg_sub_Micro_2",
+      "DHV56mg_sub_Micro_4",
+      "hv6214mg_1",
+      "hv6214mg_6",
+      "standard4",
+      "standardMicro1",
+      "tproSG90_1"
+    ],
+    "strValue": "tproSG90_1"
   },
   "Post Height(in)": {
     "name": "Post Height(in)",
