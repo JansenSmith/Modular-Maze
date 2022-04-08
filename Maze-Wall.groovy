@@ -6,7 +6,7 @@ import eu.mihosoft.vrl.v3d.CSG
 // Load stls
 File servoFile = ScriptingEngine.fileFromGit(
 	"https://github.com/WPIRoboticsEngineering/Modular-Maze.git",
-	"Maze_Wall_Post.stl");
+	"Inputs/Maze_Wall_Post.stl");
 DEFAULT_POST  = Vitamins.get(servoFile)
 						.toXMin()
 						.toYMin()
