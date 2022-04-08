@@ -1,6 +1,6 @@
 import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
 import com.neuronrobotics.bowlerstudio.vitamins.Vitamins
-
+import java.awt.Color
 import eu.mihosoft.vrl.v3d.CSG
 
 // Load stls
@@ -11,11 +11,11 @@ DEFAULT_POST  = Vitamins.get(servoFile)
 						.toXMin()
 						.toYMin()
 						
-//Setup Params
+//Setup Params 
 Post_Height 	= new LengthParameter("Post Height(in)",8,[24.0,1.0])
 Base_Size		= new LengthParameter("Base Radius(mm)",40,[240.0,10.0])
 Base_Height	= new LengthParameter("Base Height(mm)",1,[20.0,0.1])
-Peg_Radius	= new LengthParameter("Peg Radius(mm)",2,[8.0,0.1])
+Peg_Radius	= new LengthParameter("Peg Radius(mm)",3,[8.0,0.1])
 
 // Object Generation Functions
 CSG Make_Post(){
@@ -36,6 +36,7 @@ CSG Make_Post(){
 	return Maze_Wall_Post
 			.setParameter(Post_Height)
 			.setRegenerate({Make_Post()})
+			.setName("Unsuported_post")
 }
 
 CSG Make_Peg(){
@@ -59,17 +60,12 @@ CSG Make_Peg(){
 			.setParameter(Base_Height)
 			.setParameter(Peg_Radius)
 			.setRegenerate({Make_Peg()})
+			.setName("Peg")
 	}
 
 //Object Generation
 Maze_Wall_Post = Make_Post()
 Maze_Wall_Peg = Make_Peg()
-
-//Object Placement
-//BowlerStudioController.addCsg(Maze_Wall_Post.intersect(Maze_Wall_Peg)) //sanity check for peg size
-//BowlerStudioController.addCsg(Maze_Wall_Post)
-//BowlerStudioController.addCsg(Maze_Wall_Peg)
-BowlerStudioController.addCsg(Maze_Wall_Post.union(Maze_Wall_Peg)) 
 
 /* 
 String filename =ScriptingEngine.getWorkspace().getAbsolutePath()+"/CopiedStl.stl";
@@ -82,4 +78,6 @@ ScriptingEngine.pushCodeToGit("https://github.com/WPIRoboticsEngineering/Modular
 	 Maze_Wall_Post.toStlString(), 
 	 "Printable 11inch demo version")
 */
-return null
+Output_Post = Maze_Wall_Post.union(Maze_Wall_Peg)
+Output_Post = Output_Post.setColor(javafx.scene.paint.Color.BLUE).movez(-Output_Post.getMinZ()).setName("MazePost")
+return [Output_Post]
