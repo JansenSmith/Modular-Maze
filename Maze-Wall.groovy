@@ -2,6 +2,8 @@ import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
 import com.neuronrobotics.bowlerstudio.vitamins.Vitamins
 import java.awt.Color
 import eu.mihosoft.vrl.v3d.CSG
+import eu.mihosoft.vrl.v3d.Cylinder
+import eu.mihosoft.vrl.v3d.parametrics.LengthParameter
 
 // Load stls
 File servoFile = ScriptingEngine.fileFromGit(
